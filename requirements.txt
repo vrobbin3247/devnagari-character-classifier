@@ -3,3 +3,4 @@ streamlit-drawable-canvas
 tensorflow
 opencv-python
 numpy
+opencv-python-headless
