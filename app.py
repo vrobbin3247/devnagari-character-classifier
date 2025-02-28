@@ -14,12 +14,11 @@ def load_model():
 
 
 canvas_result = st_canvas(
-    fill_color="rgba(255, 165, 0, 0.3)",
-    stroke_width=12,
-    stroke_color="#000000",
-    background_color="#ffffff",
-    height=300,
-    width=300,
+    stroke_width=30,
+    stroke_color="#ffffff",
+    background_color="#000000",
+    height=320,
+    width=320,
     drawing_mode="freedraw",
     key="canvas",
 )
@@ -61,4 +60,5 @@ def predict_character():
     st.success(f"Predicted Character: **{predicted_label}**")
 
 # Button to trigger prediction
-st.button("Predict Character", on_click=predict_character)
+if st.button("Predict Character"):
+    predict_character()
