@@ -4,6 +4,7 @@ from streamlit_drawable_canvas import st_canvas
 import tensorflow as tf
 import cv2
 import numpy as np
+import time
 def wide_space_default():
     st.set_page_config(layout="wide")
 
