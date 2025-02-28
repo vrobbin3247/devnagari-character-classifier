@@ -23,7 +23,15 @@ st.markdown(
     [data-testid="stHorizontalBlock"] {
             align-items: center;
     }
-
+    [data-testid="stHeading"]{
+            text-align: center;
+    }
+    [data-testid="stBaseButton-secondary"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
     """,
     unsafe_allow_html=True,
 )
@@ -112,3 +120,8 @@ with col5:
             st.session_state.predicted_image,
             caption=f"Predicted: {st.session_state.predicted_label}"
         )
+def reset_app():
+    st.session_state.clear()
+    st.rerun()
+
+st.button("Reset & Reload",icon="🔄" on_click=reset_app)
