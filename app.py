@@ -7,16 +7,19 @@ import numpy as np
 
 st.markdown(
     """
-<style>
-button {
-    height: auto;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    width: 320px !important;
-    content: center !important;
-}
-</style>
-""",
+    <style>
+    /* Target only primary buttons in Streamlit */
+    [data-testid="stBaseButton-primary"] {
+        height: auto;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        width: 320px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    """,
     unsafe_allow_html=True,
 )
 st.title("Devnagari Character Classifier")
