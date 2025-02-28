@@ -124,4 +124,4 @@ def reset_app():
     st.session_state.clear()
     st.rerun()
 
-st.button("Reset & Reload",icon="🔄" on_click=reset_app)
+st.button("Reset & Reload",icon="🔄", on_click=reset_app)
