@@ -16,7 +16,7 @@ def load_model():
 # Create a canvas component
 canvas_result = st_canvas(
     fill_color="rgba(255, 165, 0, 0.3)",  # Fixed fill color with some opacity
-    stroke_width=20,
+    stroke_width=12,
     stroke_color="#000000",
     background_color="#ffffff",
     height=300,
