@@ -8,7 +8,7 @@ import numpy as np
 st.title("Devnagari Character Classifier")
 
 def load_model():
-    model = tf.keras.models.load_model("classifier86v2.keras")
+    model = tf.keras.models.load_model("classifier86.keras")
     return model
 
 
@@ -25,9 +25,9 @@ canvas_result = st_canvas(
     key="canvas",
 )
 
-# Display the drawn image
-if canvas_result.image_data is not None:
-    st.image(canvas_result.image_data)
+# # Display the drawn image
+# if canvas_result.image_data is not None:
+#     st.image(canvas_result.image_data)
 
 class_labels = [
     'character_10_yna', 'character_11_taamatar', 'character_12_thaa', 'character_13_daa',
