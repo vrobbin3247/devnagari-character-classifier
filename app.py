@@ -9,6 +9,9 @@ def wide_space_default():
 
 wide_space_default()
 st.title("Devanagari Character Classifier")
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model("/Users/vaibhavmandavkar/PycharmProjects/devnagari character classification/classifier86v3.keras")
 
 
 st.markdown("<div style='margin-bottom: 20px;'></div>", unsafe_allow_html=True)
