@@ -67,10 +67,4 @@ def predict_character():
     st.write(f"Predicted Character: **{predicted_label}**")
 
 # Button to trigger prediction
-# st.button("Predict Character", on_click=predict_character)
-if st.button("Save Data"):
-    if canvas_result.image_data is not None:
-        np.save("canvas_data.npy", canvas_result.image_data)
-        st.success("✅ Image data saved as 'canvas_data.npy'!")
-    else:
-        st.warning("⚠️ No drawing found!")
+st.button("Predict Character", on_click=predict_character)
