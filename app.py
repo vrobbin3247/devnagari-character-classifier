@@ -1,12 +1,10 @@
-import pandas as pd
-from PIL import Image
+
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import tensorflow as tf
 import cv2
 import numpy as np
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 st.title("Devnagari Character Classifier")
 
 def load_model():
