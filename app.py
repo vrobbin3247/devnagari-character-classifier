@@ -8,7 +8,7 @@ import numpy as np
 st.title("Devnagari Character Classifier")
 
 def load_model():
-    model = tf.keras.models.load_model("classifier86.keras")
+    model = tf.keras.models.load_model("classifier86v3.keras")
     return model
 
 
