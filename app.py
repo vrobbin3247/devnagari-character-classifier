@@ -4,12 +4,12 @@ from streamlit_drawable_canvas import st_canvas
 import tensorflow as tf
 import cv2
 import numpy as np
-
-st.title("Devanagari Character Classifier")
 def wide_space_default():
     st.set_page_config(layout="wide")
 
 wide_space_default()
+st.title("Devanagari Character Classifier")
+
 
 st.markdown("<div style='margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 col1, col2, col3, col4, col5 = st.columns([3, 1, 3, 1, 3])
