@@ -10,7 +10,9 @@
 
 
 A Streamlit web application that recognizes handwritten Devanagari characters using a Convolutional Neural Network.
+
 ![Demo](devanagari_classifier.gif)
+
 ## 📋 Overview
 
 This application can recognize 46 different Devanagari characters, including:
@@ -28,13 +30,23 @@ The classification model uses a CNN architecture with:
 - Dense output layer with softmax activation
 
 ```
-Sequential([
+ Sequential([
+    Input(shape=(32, 32, 1)), 
     Conv2D(32, kernel_size=(3, 3), activation="relu"),
     BatchNormalization(),
     Conv2D(32, kernel_size=(3, 3), activation="relu"),
     BatchNormalization(),
     MaxPooling2D(pool_size=(2, 2)),
-    ...
+
+    Conv2D(64, kernel_size=(3, 3), activation="relu"),
+    BatchNormalization(),
+    Conv2D(64, kernel_size=(3, 3), activation="relu"),
+    BatchNormalization(),
+    MaxPooling2D(pool_size=(2, 2)),
+
+    Flatten(),
+    Dropout(0.5),
+    Dense(num_classes, activation="softmax")
 ])
 ```
 
