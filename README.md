@@ -8,6 +8,7 @@
 ![Forks](https://img.shields.io/github/forks/vrobbin3247/devnagari-character-classifier?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/vrobbin3247/devnagari-character-classifier)
 
+![License](https://img.shields.io/github/license/vrobbin3247/devnagari-character-classifier)
 
 A Streamlit web application that recognizes handwritten Devanagari characters using a Convolutional Neural Network.
 
