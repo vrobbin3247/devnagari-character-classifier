@@ -10,7 +10,7 @@
 
 
 A Streamlit web application that recognizes handwritten Devanagari characters using a Convolutional Neural Network.
-
+![Demo](devanagari_classifier.gif)
 ## 📋 Overview
 
 This application can recognize 46 different Devanagari characters, including:
