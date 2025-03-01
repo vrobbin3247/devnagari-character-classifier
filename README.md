@@ -1,4 +1,5 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://devanagari-character-classifier.streamlit.app/)  
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://devanagari-character-classifier.streamlit.app/) 
+
 ![Python](https://img.shields.io/badge/Python-3.12.2-blue)  
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.42.1-red)  
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.18.0-orange)  
