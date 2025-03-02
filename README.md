@@ -66,6 +66,10 @@ The model achieves excellent recognition rates for most characters:
 
 ## 💻 How to Use
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://devanagari-character-classifier.streamlit.app/)
+
+OR 
+
 1. Clone the repository:
    ```
    git clone https://github.com/vrobbin3247/devnagari-character-classifier.git
